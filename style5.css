@@ -1,0 +1,157 @@
+:root {
+    --bg-color: #f0f0f0;
+    --text-color: #111;
+    --box-color: rgba(255, 255, 255, 0.15);
+    --btn-color: #00ffc3;
+  }
+  
+  body.dark {
+    --bg-color: #121212;
+    --text-color: #fff;
+    --box-color: rgba(255, 255, 255, 0.05);
+    --btn-color: #ff6ec7;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.5s;
+  }
+  
+  .blob {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, #ff6ec7, #23d5ab);
+    filter: blur(80px);
+    border-radius: 50%;
+    animation: moveBlob 10s infinite linear;
+    z-index: -1;
+  }
+  
+  @keyframes moveBlob {
+    0% { top: 0%; left: 0%; }
+    50% { top: 60%; left: 60%; }
+    100% { top: 0%; left: 0%; }
+  }
+  
+  .theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .login-container {
+    background: var(--box-color);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 40px;
+    width: 400px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    transition: all 0.3s;
+  }
+  
+  .login-box h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  .input-group input {
+    width: 86%;
+    padding: 12px 35px;
+    border: none;
+    border-bottom: 2px solid var(--text-color);
+    background: transparent;
+    color: var(--text-color);
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .input-group svg {
+    position: absolute;
+    left: 5px;
+    top: 13px;
+    width: 20px;
+    height: 20px;
+    fill: var(--text-color);
+  }
+  
+  .input-group label {
+    position: absolute;
+    left: 35px;
+    top: 12px;
+    font-size: 16px;
+    pointer-events: none;
+    color: #aaa;
+    transition: 0.3s ease;
+  }
+  
+  .input-group input:focus ~ label,
+  .input-group input:valid ~ label {
+    top: -10px;
+    font-size: 12px;
+    color: var(--btn-color);
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 12px;
+    background: var(--btn-color);
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #17ffc3;
+  }
+  
+  .social-login {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .social-login button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .google {
+    background: #db4437;
+  }
+  
+  .facebook {
+    background: #4267B2;
+  }
+  
+  .error-msg {
+    color: red;
+    text-align: center;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pro Login Page</title>
+  <link rel="stylesheet" href="style5.css" />
+</head>
+<body>
+  <div class="blob"></div>
+  <div class="theme-toggle" onclick="toggleTheme()">🌓</div>
+
+  <div class="login-container">
+    <form class="login-box" onsubmit="return validateForm()">
+      <h2>Welcome Back!</h2>
+      
+      <div class="input-group">
+        <svg><use href="#user-icon"/></svg>
+        <input type="text" id="name" required />
+        <label for="name">Full Name</label>
+      </div>
+
+      <div class="input-group">
+        <svg><use href="#mail-icon"/></svg>
+        <input type="email" id="email" required />
+        <label for="email">Gmail Only</label>
+      </div>
+
+      <div class="input-group">
+        <svg><use href="#lock-icon"/></svg>
+        <input type="password" id="password" required />
+        <label for="password">Password</label>
+      </div>
+
+      <p id="error" class="error-msg"></p>
+
+      <button type="submit" class="btn">Log In</button>
+
+      <div class="social-login">
+        <button class="google">Sign in with Google</button>
+        <button class="facebook">Login with Facebook</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- SVG icons -->
+  <svg style="display: none;">
+    <symbol id="user-icon" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/>
+    </symbol>
+    <symbol id="mail-icon" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 13.5L2 6v12h20V6l-10 7.5z"/>
+    </symbol>
+    <symbol id="lock-icon" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 17a1.5 1.5 0 001.5-1.5v-1a1.5 1.5 0 10-3 0v1A1.5 1.5 0 0012 17zm6-9h-1V6a5 5 0 00-10 0v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-3 0H9V6a3 3 0 016 0v2z"/>
+    </symbol>
+  </svg>
+
+  <script src="script5.js"></script>
+</body>
+</html>
