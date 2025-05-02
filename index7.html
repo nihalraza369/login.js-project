@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Futuristic Pulse Login</title>
+  <link rel="stylesheet" href="style7.css" />
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <div class="login-box" id="tiltBox">
+    <h2 id="aiMessage">Welcome back, user_001...</h2>
+
+    <div class="input-group">
+      <input type="email" id="email" required />
+      <label for="email">Gmail Address</label>
+    </div>
+
+    <div class="input-group">
+      <input type="password" id="password" required />
+      <label for="password">Password</label>
+      <span onclick="togglePassword()" class="show-pass">👁️</span>
+    </div>
+
+    <p class="error-msg" id="error"></p>
+
+    <button onclick="handleLogin()" class="btn">Login</button>
+  </div>
+
+  <audio id="clickSound" src="click.mp3" preload="auto"></audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="script7.js"></script>
+</body>
+</html>

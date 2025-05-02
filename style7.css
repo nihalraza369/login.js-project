@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    background: #0f0f0f;
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .login-box {
+    width: 350px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 0 15px #00f7ff88;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    color: #00f7ff;
+    animation: typing 3s steps(30, end);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #00f7ff;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #00f7ff;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .input-group label {
+    position: absolute;
+    top: -18px;
+    left: 0;
+    font-size: 14px;
+    color: #00f7ff;
+  }
+  
+  .show-pass {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 12px;
+    background: #00f7ff;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #0ff;
+  }
+  
+  .error-msg {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
