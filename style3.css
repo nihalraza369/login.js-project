@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to right, #232526, #414345);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    backdrop-filter: blur(12px);
+  }
+  
+  .left-panel {
+    flex: 1;
+    padding: 40px;
+    color: #fff;
+    background: url('https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1050&q=80') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: brightness(0.5);
+  }
+  
+  .left-panel h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .left-panel p {
+    font-size: 18px;
+    opacity: 0.9;
+  }
+  
+  .login-form {
+    flex: 1;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.12);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .login-form h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 28px;
+    text-align: center;
+  }
+  
+  .login-form input {
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+  }
+  
+  .login-form input::placeholder {
+    color: #ddd;
+  }
+  
+  .login-form button {
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #00ffe1;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .login-form button:hover {
+    background: #00e0c0;
+  }
+  
+  .error-msg {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+  

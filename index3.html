@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Login Page</title>
+  <link rel="stylesheet" href="style3.css"/>
+</head>
+<body>
+
+<div class="container">
+  <div class="left-panel">
+    <h1>Welcome Back!</h1>
+    <p>Log in to continue to your dashboard.</p>
+  </div>
+
+  <div class="login-form">
+    <h2>Login</h2>
+    <form onsubmit="return validateForm()">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email (must be Gmail)" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit">Log In</button>
+      <p id="error" class="error-msg"></p>
+    </form>
+  </div>
+</div>
+
+<script src="script3.js"></script>
+</body>
+</html>
