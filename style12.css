@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to right, #373b44, #4286f4);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wrapper {
+    display: flex;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    width: 900px;
+    max-width: 100%;
+  }
+  
+  .left-panel {
+    background: #f0f4ff;
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .left-panel h1 {
+    font-size: 32px;
+    color: #333;
+  }
+  
+  .left-panel p {
+    margin: 20px 0;
+    color: #666;
+  }
+  
+  .left-panel img {
+    width: 200px;
+    margin-top: 20px;
+    animation: float 2s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .right-panel {
+    flex: 1;
+    padding: 40px;
+    background: #fff;
+  }
+  
+  .login-form h2 {
+    margin-bottom: 20px;
+    color: #444;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .password-wrapper {
+    position: relative;
+  }
+  
+  .password-wrapper input {
+    width: 100%;
+  }
+  
+  #togglePassword {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  
+  .extra a {
+    text-decoration: none;
+    color: #4286f4;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #4286f4;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #2f6bd6;
+  }
+  
+  .signup {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .signup a {
+    color: #4286f4;
+    text-decoration: none;
+  }
+  
+  .error {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
