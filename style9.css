@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #00f7ff, #ff0077, #ff9900);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    z-index: -1;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+  
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .login-container {
+    position: relative;
+    max-width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 0 15px 5px rgba(0, 255, 255, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .title {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #00f7ff;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .input-group input:focus {
+    border-bottom: 2px solid #ff9900;
+  }
+  
+  .input-group label {
+    position: absolute;
+    top: -18px;
+    left: 0;
+    font-size: 14px;
+    color: #00f7ff;
+  }
+  
+  .show-pass {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .error-msg {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 12px;
+    background: #00f7ff;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #ff9900;
+  }
+  
+  .social-btn {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .social-btn.google {
+    background: #db4437;
+  }
+  
+  .social-btn.facebook {
+    background: #4267B2;
+  }
+  
+  .social-btn:hover {
+    opacity: 0.8;
+  }
+  
+  .additional-options {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .additional-options a {
+    color: #00f7ff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .social-login {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #signup-form {
+    margin-top: 25px;
+  }
+  
+  #signup-form input {
+    margin-bottom: 15px;
+  }
+  
+  #signup-form button {
+    background: #ff9900;
+  }
+  
+  #signup-form p {
+    text-align: center;
+  }
+  
+  #signup-form a {
+    color: #00f7ff;
+    text-decoration: none;
+  }
+  

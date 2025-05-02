@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultimate Login Page</title>
+  <link rel="stylesheet" href="style9.css">
+</head>
+<body>
+
+  <div class="background">
+    <div class="overlay"></div>
+    <div class="particles-js" id="particles-js"></div>
+  </div>
+
+  <div class="login-container">
+    <div class="login-box" id="login-box">
+      <h2 class="title">Welcome Back!</h2>
+
+      <form id="login-form">
+        <div class="input-group">
+          <input type="email" id="email" required>
+          <label for="email">Email Address</label>
+        </div>
+
+        <div class="input-group">
+          <input type="password" id="password" required>
+          <label for="password">Password</label>
+          <span onclick="togglePassword()" class="show-pass">👁️</span>
+        </div>
+
+        <button type="button" onclick="handleLogin()" class="btn">Login</button>
+
+        <p class="error-msg" id="error-msg"></p>
+
+        <div class="additional-options">
+          <p><a href="#">Forgot Password?</a></p>
+          <p><a href="#" onclick="toggleSignup()">Don't have an account? Sign Up</a></p>
+        </div>
+      </form>
+
+      <div id="signup-form" style="display:none;">
+        <h2>Create Account</h2>
+        <form>
+          <div class="input-group">
+            <input type="text" id="new-name" placeholder="Full Name" required>
+            <label for="new-name">Full Name</label>
+          </div>
+
+          <div class="input-group">
+            <input type="email" id="new-email" placeholder="Email Address" required>
+            <label for="new-email">Email Address</label>
+          </div>
+
+          <div class="input-group">
+            <input type="password" id="new-password" placeholder="Password" required>
+            <label for="new-password">Password</label>
+          </div>
+
+          <button type="button" onclick="handleSignup()" class="btn">Sign Up</button>
+
+          <p><a href="#" onclick="toggleSignup()">Already have an account? Login</a></p>
+        </form>
+      </div>
+
+      <div class="social-login">
+        <button class="social-btn google">Login with Google</button>
+        <button class="social-btn facebook">Login with Facebook</button>
+      </div>
+    </div>
+  </div>
+
+  <audio id="click-sound" src="click.mp3" preload="auto"></audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="script9.js"></script>
+</body>
+</html>
