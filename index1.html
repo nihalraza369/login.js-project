@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Page 3</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <h2>Gmail Login</h2>
+      <form onsubmit="return validateLogin()">
+        <input type="text" id="email" placeholder="you@gmail.com" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+        <p id="error" class="error"></p>
+      </form>
+    </div>
+  </div>
+  <script src="script1.js"></script>
+</body>
+</html>

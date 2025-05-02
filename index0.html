@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Glass Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="login-card">
+      <h2>Welcome Back</h2>
+      <form onsubmit="return validateEmail()">
+        <input type="text" id="email" placeholder="Enter your email" required>
+        <input type="password" id="password" placeholder="Enter your password" required>
+        <button type="submit">Login</button>
+        <p id="error" class="error-message"></p>
+      </form>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
