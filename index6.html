@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Login Portal</title>
+  <link rel="stylesheet" href="style6.css" />
+</head>
+<body>
+  <div class="theme-toggle" onclick="toggleTheme()">🌓</div>
+
+  <div class="background"></div>
+
+  <div class="login-container">
+    <form class="login-box" onsubmit="return handleLogin()">
+      <h2>Login to Learn</h2>
+
+      <div class="input-group">
+        <input type="text" id="name" required />
+        <label for="name">Your Full Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" id="email" required />
+        <label for="email">Gmail Only</label>
+      </div>
+
+      <div class="input-group">
+        <input type="password" id="password" required />
+        <label for="password">Password</label>
+      </div>
+
+      <p class="error-msg" id="error"></p>
+
+      <button class="btn" type="submit">Login</button>
+
+      <div class="suggested-courses" id="coursesBox"></div>
+    </form>
+  </div>
+
+  <script src="script6.js"></script>
+</body>
+</html>
